@@ -6,8 +6,6 @@ public class Flash : MonoBehaviour
 {
 
 
-    public int health;
-
     [Range(0f, 5f)]
     public float CurrentFlySpeed = 5f;
 
@@ -21,11 +19,6 @@ public class Flash : MonoBehaviour
     void Update()
     {
 
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-
-        }
         transform.Translate(Vector2.left * CurrentFlySpeed * Time.deltaTime);
 
     }
