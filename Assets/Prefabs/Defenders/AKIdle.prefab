@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1782383366014102576}
   - component: {fileID: 1139015930}
   - component: {fileID: 1421084251}
+  - component: {fileID: 983436913}
   m_Layer: 0
   m_Name: AKIdle
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617609255250216582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.314085, y: 3.4623861, z: -205.24857}
+  m_LocalPosition: {x: 5.314085, y: 3.4623861, z: 0}
   m_LocalScale: {x: 0.26, y: 0.26, z: 1}
   m_Children:
   - {fileID: 2364612385374261324}
@@ -81,6 +82,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &983436913
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617609255250216582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.57603765, y: -0.36656904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.775454, y: 3.7754512}
+  m_EdgeRadius: 0
 --- !u!1 &2364612385374261312
 GameObject:
   m_ObjectHideFlags: 0

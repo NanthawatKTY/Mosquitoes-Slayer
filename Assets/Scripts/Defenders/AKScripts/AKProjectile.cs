@@ -5,8 +5,8 @@ using UnityEngine;
 public class AKProjectile : MonoBehaviour
 {
 
-    [SerializeField] float speed = 1f;
-    [SerializeField] float damage = 50f;
+    [SerializeField] float speed ;
+    [SerializeField] float damage ;
 
     // Update is called once per frame
     void Update()

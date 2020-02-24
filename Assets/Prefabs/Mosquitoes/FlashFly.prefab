@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751080792043942780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1137695, y: 0.49153852, z: 979.4219}
+  m_LocalPosition: {x: -6.1137695, y: 0.49153852, z: 10}
   m_LocalScale: {x: 0.215552, y: 0.21546, z: 3}
   m_Children:
   - {fileID: 6243460121071855861}
@@ -67,7 +67,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5e83b6b9453bd4b990704c109a7673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentFlySpeed: 5
 --- !u!114 &126387318508696530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4906763666972311703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.82212186, y: 0.9055974, z: 0.33333334}
   m_Children: []
   m_Father: {fileID: 751080792043942782}
