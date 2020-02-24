@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnerBigboy
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6165753277066982109}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.2639523, y: 1.0080192, z: 968.13794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -45,5 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 1
   maxSpawnDelay: 3
-  BigboyPrefab: {fileID: 8273149979848092779, guid: c6902feefea5acf4781dc74ab333388f,
+  BigboyPrefab: {fileID: 5040680308334266209, guid: b7977ede4ea3ecd40baab274e4d6b305,
     type: 3}
