@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AKShooter : MonoBehaviour
+public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject projectile, AKgun;
+    [SerializeField] GameObject projectile, Gun;
     SpawnerFlash myLaneSpawner;
     Animator AK_Animator;
 
@@ -62,7 +62,7 @@ public class AKShooter : MonoBehaviour
 
     public void Fire()
     {
-        Instantiate(projectile, AKgun.transform.position, transform.rotation);
+        Instantiate(projectile, Gun.transform.position, transform.rotation);
     }
 
 }
