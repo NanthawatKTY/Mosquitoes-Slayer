@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Defenders : MonoBehaviour
 {
-    [SerializeField] int starCost = 100;
+    [SerializeField] int starCost ;
 
 
     public int GetStarCost() //ต้องเป็น int

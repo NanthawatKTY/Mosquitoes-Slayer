@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FlashFly
+  m_Name: Flash Fly
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,10 +22,10 @@ AnimationClip:
     - time: 0
       value: {fileID: -6578892327267529403, guid: 0cf1efabac9c9e545b0b2c06991d57c8,
         type: 3}
-    - time: 0.041666668
-      value: {fileID: 5564759131187023308, guid: 0cf1efabac9c9e545b0b2c06991d57c8,
+    - time: 0.16666667
+      value: {fileID: -4221598902092674775, guid: 0cf1efabac9c9e545b0b2c06991d57c8,
         type: 3}
-    - time: 0.083333336
+    - time: 0.33333334
       value: {fileID: 5564759131187023308, guid: 0cf1efabac9c9e545b0b2c06991d57c8,
         type: 3}
     attribute: m_Sprite
@@ -48,14 +48,14 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: -6578892327267529403, guid: 0cf1efabac9c9e545b0b2c06991d57c8, type: 3}
-    - {fileID: 5564759131187023308, guid: 0cf1efabac9c9e545b0b2c06991d57c8, type: 3}
+    - {fileID: -4221598902092674775, guid: 0cf1efabac9c9e545b0b2c06991d57c8, type: 3}
     - {fileID: 5564759131187023308, guid: 0cf1efabac9c9e545b0b2c06991d57c8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.125
+    m_StopTime: 0.375
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

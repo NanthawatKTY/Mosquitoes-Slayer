@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: 443ed528235f18d48838d0496d35aa78
+guid: 06416a97be8c55748acd2e2f82fcd707
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2142678906639040093
-    second: Sheet Bigboy 4_0
+      213: -2238303994439308367
+    second: Sheet Flash Jump_0
   - first:
-      213: 8239407744228088401
-    second: Sheet Bigboy 4_1
+      213: 7487676616609505446
+    second: Sheet Flash Jump_1
   - first:
-      213: 7988137495707202656
-    second: Sheet Bigboy 4_2
+      213: 2834803171721459320
+    second: Sheet Flash Jump_2
   - first:
-      213: -792713405378161549
-    second: Sheet Bigboy 4_3
+      213: -5391736170992409152
+    second: Sheet Flash Jump_3
   - first:
-      213: -2283163012661461527
-    second: Sheet Bigboy 4_4
+      213: -1643984317081890590
+    second: Sheet Flash Jump_4
   - first:
-      213: 5322282773244709208
-    second: Sheet Bigboy 4_5
+      213: -8024340339052463469
+    second: Sheet Flash Jump_5
   - first:
-      213: 7229183538114272219
-    second: Sheet Bigboy 4_6
+      213: 5426094752461955445
+    second: Sheet Flash Jump_6
   - first:
-      213: -7818370801440579330
-    second: Sheet Bigboy 4_7
+      213: 4102871322654535761
+    second: Sheet Flash Jump_7
+  - first:
+      213: 934470264701441171
+    second: Sheet Flash Jump_8
+  - first:
+      213: -6794526876706821339
+    second: Sheet Flash Jump_9
+  - first:
+      213: -7597929471214489991
+    second: Sheet Flash Jump_10
+  - first:
+      213: 2251276937453360364
+    second: Sheet Flash Jump_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -69,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheet Bigboy 4_0
+      name: Sheet Flash Jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3830251e6604e794bababda136317a21
-      internalID: -2142678906639040093
+      spriteID: fa8ec30195704184894787d9b331653e
+      internalID: -2238303994439308367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_1
+      name: Sheet Flash Jump_1
       rect:
         serializedVersion: 2
         x: 642
-        y: 600
+        y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9116e2e24e9c80c4cb5f6a2870efb112
-      internalID: 8239407744228088401
+      spriteID: 5e8b0fba5526e2c48b29dcbb429aa8a6
+      internalID: 7487676616609505446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_2
+      name: Sheet Flash Jump_2
       rect:
         serializedVersion: 2
         x: 1284
-        y: 600
+        y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d5ba17029651a1419c65571093f0919
-      internalID: 7988137495707202656
+      spriteID: 84c56e3df25a71841ad51630e5d75851
+      internalID: 2834803171721459320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_3
+      name: Sheet Flash Jump_3
       rect:
         serializedVersion: 2
         x: 1926
-        y: 600
+        y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fca53d9e6b368ca409d9bbf91e5f5d41
-      internalID: -792713405378161549
+      spriteID: 12555bb646afeaa4da1552ef02aa4ec7
+      internalID: -5391736170992409152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_4
+      name: Sheet Flash Jump_4
       rect:
         serializedVersion: 2
         x: 2568
-        y: 600
+        y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad501731d996da149a4bb36726049451
-      internalID: -2283163012661461527
+      spriteID: 9d0cf51edc00e5b4f916b524aec0f319
+      internalID: -1643984317081890590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_5
+      name: Sheet Flash Jump_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3210
         y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b985df714dd19184e87d5b81c4b112c0
-      internalID: 5322282773244709208
+      spriteID: 4359bd35f9a199e48b2a6a94180cb7ab
+      internalID: -8024340339052463469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_6
+      name: Sheet Flash Jump_6
       rect:
         serializedVersion: 2
-        x: 642
+        x: 3852
         y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb39e77f70c0dcb4cbc282242035e895
-      internalID: 7229183538114272219
+      spriteID: 991599690311bc14e889ef94216bca01
+      internalID: 5426094752461955445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Bigboy 4_7
+      name: Sheet Flash Jump_7
       rect:
         serializedVersion: 2
-        x: 1284
+        x: 4494
         y: 0
         width: 642
-        height: 600
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,8 +331,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 421f9af8658fb974eb22c8d0106b5b0a
-      internalID: -7818370801440579330
+      spriteID: f0de941f3d9ddb544821938f768f7d37
+      internalID: 4102871322654535761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Flash Jump_8
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 0
+        width: 642
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dce2c1df92bf8d43876f02c763840a6
+      internalID: 934470264701441171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Flash Jump_9
+      rect:
+        serializedVersion: 2
+        x: 5778
+        y: 0
+        width: 642
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e08056361eec94a9b24bff2680a4e4
+      internalID: -6794526876706821339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Flash Jump_10
+      rect:
+        serializedVersion: 2
+        x: 6420
+        y: 0
+        width: 642
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8372140d796047c4bb6da98d9af6f9f0
+      internalID: -7597929471214489991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Flash Jump_11
+      rect:
+        serializedVersion: 2
+        x: 7062
+        y: 0
+        width: 642
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd0dcb18e4b3b940afed1a5e6849c68
+      internalID: 2251276937453360364
       vertices: []
       indices: 
       edges: []

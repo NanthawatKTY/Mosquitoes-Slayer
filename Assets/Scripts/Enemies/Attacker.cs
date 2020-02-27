@@ -6,8 +6,8 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
 
-
-    float CurrentFlySpeed;
+    //[Range (0f,5f)]
+    float CurrentFlySpeed = 1f;
     GameObject CurrentTarget;
 
     // Start is called before the first frame update
@@ -61,19 +61,9 @@ public class Attacker : MonoBehaviour
     }
 
 
-
-
-
-
-
-
-
-
-
-
-    void OnTriggerExit2D(Collider2D collider2D)   //Destroy GameObject when out of field
+    void OnTriggerExit2D(Collider2D otherCollider)   //Destroy GameObject when out of field
     {
-        if (collider2D.gameObject.name == "CoreGameArea")
+        if (otherCollider.gameObject.name == "CoreGameArea")
         {
             Destroy(gameObject);
         }

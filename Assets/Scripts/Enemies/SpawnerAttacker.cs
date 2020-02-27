@@ -6,7 +6,7 @@ public class SpawnerAttacker : MonoBehaviour
 {
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 3f;
-    [SerializeField] Attacker NormalPrefab;
+    [SerializeField] Attacker[] attackerPrefabArray;
   
 
 
@@ -18,19 +18,21 @@ public class SpawnerAttacker : MonoBehaviour
         while (spawnRtoL)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
-            SpawnNormal();
+            SpawnAttacker();
         }
     }
 
-    private void SpawnNormal()
+    private void SpawnAttacker()
     {
-        Attacker newNormal = Instantiate(NormalPrefab, transform.position, transform.rotation) as Attacker;
-        newNormal.transform.parent = transform; // who normal is , where normal is
+        var attackerIndex = Random.Range(0, attackerPrefabArray.Length);
+        Spawn(attackerPrefabArray[attackerIndex]);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Spawn(Attacker myAttacker)
     {
-        
+        Attacker newAttacker = Instantiate(myAttacker, transform.position, transform.rotation) as Attacker;
+        newAttacker.transform.parent = transform; // who normal is , where normal is  
     }
+
+
 }
