@@ -6,7 +6,7 @@ public class SpawnerFlash : MonoBehaviour
 {
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 3f;
-    [SerializeField] Flash FlashFlyPrefab;
+    [SerializeField] Attacker FlashFlyPrefab;
 
 
 
@@ -24,7 +24,7 @@ public class SpawnerFlash : MonoBehaviour
 
     private void SpawnFlash()
     {
-        Flash newFlash = Instantiate(FlashFlyPrefab, transform.position, transform.rotation) as Flash;
+        Attacker newFlash = Instantiate(FlashFlyPrefab, transform.position, transform.rotation) as Attacker;
         newFlash.transform.parent = transform; // who flash is , where flash is
 
     }

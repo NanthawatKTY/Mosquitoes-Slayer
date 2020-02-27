@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnerNormal : MonoBehaviour
+public class SpawnerAttacker : MonoBehaviour
 {
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 3f;
-    [SerializeField] Mosquito attackerRtoLPrefab;
+    [SerializeField] Attacker NormalPrefab;
   
 
 
@@ -18,14 +18,14 @@ public class SpawnerNormal : MonoBehaviour
         while (spawnRtoL)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
-            SpawnAttacker();
+            SpawnNormal();
         }
     }
 
-    private void SpawnAttacker()
+    private void SpawnNormal()
     {
-        Instantiate(attackerRtoLPrefab, transform.position, transform.rotation);
-       
+        Attacker newNormal = Instantiate(NormalPrefab, transform.position, transform.rotation) as Attacker;
+        newNormal.transform.parent = transform; // who normal is , where normal is
     }
 
     // Update is called once per frame

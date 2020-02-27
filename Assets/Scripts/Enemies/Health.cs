@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlashHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
 
     [SerializeField] float health = 100f;

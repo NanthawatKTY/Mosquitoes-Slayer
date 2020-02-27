@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a17f19b79b24343bd943a6f738a1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 2
-  maxSpawnDelay: 5
+  minSpawnDelay: 1
+  maxSpawnDelay: 3
   FlashFlyPrefab: {fileID: -1883927305868905833, guid: 6d2a9086f2d362d44bd170dd23bc6413,
     type: 3}

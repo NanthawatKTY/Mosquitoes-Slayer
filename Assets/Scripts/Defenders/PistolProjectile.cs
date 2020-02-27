@@ -15,8 +15,8 @@ public class PistolProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        var health = otherCollider.GetComponent<FlashHealth>();
-        var attacker = otherCollider.GetComponent<Flash>();
+        var health = otherCollider.GetComponent<Health>();
+        var attacker = otherCollider.GetComponent<Attacker>();
 
         if (attacker && health)
         {

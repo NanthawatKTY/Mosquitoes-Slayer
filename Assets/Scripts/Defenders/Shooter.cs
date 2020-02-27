@@ -5,42 +5,44 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject projectile, Gun;
-    SpawnerFlash myLaneSpawner;
-    Animator AK_Animator;
+    SpawnerAttacker myLaneSpawner;
+    Animator animator;
 
     private void Start()
     {
         SetLaneSpawner();
-        AK_Animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (IsAttackerInLane())
-        { 
-      
-            AK_Animator.SetBool("IsAttacking",true);
+        if (IsAttackerInLane() )
+        {
+
+            animator.SetBool("IsAttacking",true);
         }
         else
         {
-            AK_Animator.SetBool("IsAttacking", false);
+            animator.SetBool("IsAttacking", false);
         }
+
     }
 
     private void SetLaneSpawner()
     {
-        SpawnerFlash[] spawners = FindObjectsOfType<SpawnerFlash>();
+        SpawnerAttacker[] spawners = FindObjectsOfType<SpawnerAttacker>();
 
-        foreach (SpawnerFlash spawner in spawners)
+        foreach (SpawnerAttacker spawner in spawners)
         {
             bool IsCloseEnough = 
                 
-            Mathf.Floor(Mathf.Abs((spawner.transform.position.y - transform.position.y))) <= Mathf.Epsilon;
+            Mathf.Floor(Mathf.Abs(spawner.transform.position.y - transform.position.y)) <= Mathf.Epsilon;
             // turn into plus
 
             if (IsCloseEnough)
             {
                 myLaneSpawner = spawner;
+                break;
             }
         }
 
@@ -48,16 +50,18 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInLane()
     {
-        if (myLaneSpawner.transform.childCount <= 0)
+        if ( myLaneSpawner.transform.childCount <= 0)
         {
             return false;
         }
+
         else
         {
-         
+
             return true;
-          
+
         }
+
     }
 
     public void Fire()
