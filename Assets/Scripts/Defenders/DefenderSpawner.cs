@@ -1,10 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] Defenders defender;
+    Defenders defender;
+    GameObject defendersParent;
+    const string DEFENDER_PARENT_NAME = "Defenders";
+
+    private void Start()
+    {
+        CreateDefendersParent();
+    }
+
+    private void CreateDefendersParent()
+    {
+        defendersParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defendersParent)
+        {
+            defendersParent = new GameObject(DEFENDER_PARENT_NAME);
+        
+        }
+    }
 
     private void OnMouseDown()
     {
@@ -53,5 +71,6 @@ public class DefenderSpawner : MonoBehaviour
     {
 
         Defenders newDefender = Instantiate(defender, roundedPos, transform.rotation) as Defenders;
+        newDefender.transform.parent = defendersParent.transform;
     }
 }

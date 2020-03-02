@@ -22,6 +22,11 @@ public class SpawnerAttacker : MonoBehaviour
         }
     }
 
+    public void StopSpawning()
+    {
+        spawnRtoL = false;
+    }
+
     private void SpawnAttacker()
     {
         var attackerIndex = Random.Range(0, attackerPrefabArray.Length);

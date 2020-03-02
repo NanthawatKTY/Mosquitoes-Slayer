@@ -10,6 +10,20 @@ public class Attacker : MonoBehaviour
     float CurrentFlySpeed = 1f;
     GameObject CurrentTarget;
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        LevelController levelController = FindObjectOfType<LevelController>();  //Debug Null when restart
+        if (levelController != null)
+        {
+            levelController.AttackerKilled();
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,11 +75,11 @@ public class Attacker : MonoBehaviour
     }
 
 
-    void OnTriggerExit2D(Collider2D otherCollider)   //Destroy GameObject when out of field
+    void OnTriggerEnter2D(Collider2D otherCollider)   //Destroy GameObject when out of field
     {
-        if (otherCollider.gameObject.name == "CoreGameArea")
+        if (otherCollider.gameObject.name == "Damage Collider")
         {
-            Destroy(gameObject);
+           Destroy(gameObject);
         }
     }
 
