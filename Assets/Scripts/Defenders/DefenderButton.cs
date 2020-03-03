@@ -31,6 +31,7 @@ public class DefenderButton : MonoBehaviour
     private void OnMouseDown()
     {
         var buttons = FindObjectsOfType<DefenderButton>();
+        //sound
         foreach (DefenderButton button in buttons)
         {
             button.GetComponent<SpriteRenderer>().color = new Color32(51, 51, 51, 255);

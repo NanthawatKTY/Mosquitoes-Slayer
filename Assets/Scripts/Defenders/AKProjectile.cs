@@ -22,6 +22,7 @@ public class AKProjectile : MonoBehaviour
         //Reduce Health
         if (attacker && health)
         {
+            SFXManagement.PlaySound("RobloxDeathSound");
             health.DealDamage(damage);
             Destroy(gameObject);
         }

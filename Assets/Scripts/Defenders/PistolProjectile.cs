@@ -21,6 +21,7 @@ public class PistolProjectile : MonoBehaviour
         if (attacker && health)
         {
             //Reduce Health
+            SFXManagement.PlaySound("RobloxDeathSound");
             health.DealDamage(damage);
             Destroy(gameObject);
         }

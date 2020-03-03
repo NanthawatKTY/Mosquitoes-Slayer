@@ -13,7 +13,9 @@ public class Health : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            SFXManagement.PlaySound("SPLAT");
             TriggerDeathVFX();
+           
             Destroy(gameObject);
         }
     }
@@ -24,6 +26,7 @@ public class Health : MonoBehaviour
         {
             return;
         }
+        SFXManagement.PlaySound("SPLAT");
         GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(deathVFXObject, 1f);
     }

@@ -75,6 +75,8 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
+        SFXManagement.PlaySound("piggy_plop"); //SFX On Fire
+
         GameObject newProjectile = Instantiate(projectile, Gun.transform.position, transform.rotation) as GameObject;
         newProjectile.transform.parent = projectileParent.transform;
     }

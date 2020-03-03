@@ -20,6 +20,7 @@ public class Attacker : MonoBehaviour
         LevelController levelController = FindObjectOfType<LevelController>();  //Debug Null when restart
         if (levelController != null)
         {
+        
             levelController.AttackerKilled();
         }
     }
