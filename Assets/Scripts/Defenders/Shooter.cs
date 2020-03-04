@@ -81,4 +81,21 @@ public class Shooter : MonoBehaviour
         newProjectile.transform.parent = projectileParent.transform;
     }
 
+    private bool IsAttackerAheadInLane()
+    {
+        int childCount = myLaneSpawner.transform.childCount;
+        if (childCount > 0)
+        {
+            //check if the enemy is ahead of the defender
+            for (int i = 0; i < childCount; i++)
+            {
+                if (myLaneSpawner.transform.GetChild(i).transform.position.x > gameObject.transform.position.x)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

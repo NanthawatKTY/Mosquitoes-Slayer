@@ -37,17 +37,21 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    IEnumerator HandleWinCondition()
+    private IEnumerator HandleWinCondition()
     {
-        winLabel.SetActive(true);
-        GetComponent<AudioSource>().Play();             //Play Audio
-        yield return new WaitForSeconds(waitToLoad);
-        FindObjectOfType<LevelLoader>().LoadNextScene();
+
+            yield return new WaitUntil(() => numberOfMosquito <= 0 && levelTimerFinished);
+            GetComponent<AudioSource>().Play();                      //Play Audio
+            winLabel.SetActive(true);
+            yield return new WaitForSeconds(waitToLoad) ;
+            FindObjectOfType<LevelLoader>().LoadNextScene();
+
     }
 
     public void HandleLoseCondition()
     {
-        loseLabel.SetActive(true);
+
+            loseLabel.SetActive(true);
         Time.timeScale = 0;
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class SpawnerAttacker : MonoBehaviour
     {
         while (spawnRtoL)
         {
-            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay));
             SpawnAttacker();
         }
     }
@@ -29,7 +30,7 @@ public class SpawnerAttacker : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        var attackerIndex = Random.Range(0, attackerPrefabArray.Length);
+        var attackerIndex = UnityEngine.Random.Range(0, attackerPrefabArray.Length);
         Spawn(attackerPrefabArray[attackerIndex]);
     }
 
@@ -39,5 +40,8 @@ public class SpawnerAttacker : MonoBehaviour
         newAttacker.transform.parent = transform; // who normal is , where normal is  
     }
 
-
+    internal object GetChild(int i)
+    {
+        throw new NotImplementedException();
+    }
 }
