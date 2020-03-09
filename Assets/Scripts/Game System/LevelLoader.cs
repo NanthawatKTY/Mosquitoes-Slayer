@@ -31,8 +31,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
+    
+
     public void LoadMainMenu()
     {
+        
         Time.timeScale = 1;
         SceneManager.LoadScene("Start Screen");
     }

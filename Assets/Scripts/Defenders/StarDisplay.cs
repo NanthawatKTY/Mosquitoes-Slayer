@@ -29,6 +29,7 @@ public class StarDisplay : MonoBehaviour
     public void AddStars(int amount)
     {
         stars += amount;
+        SFXManagement.PlaySound("qurazy_quoin");
         UpdateDisplay();
     }
 

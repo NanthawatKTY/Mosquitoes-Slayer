@@ -11,7 +11,6 @@ public class LevelController : MonoBehaviour
     int numberOfMosquito = 0;
     bool levelTimerFinished = false;
 
-
     private void Start()
     {
         if (winLabel == null || loseLabel == null) { return; }
@@ -40,18 +39,19 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleWinCondition()
     {
 
-            yield return new WaitUntil(() => numberOfMosquito <= 0 && levelTimerFinished);
-            GetComponent<AudioSource>().Play();                      //Play Audio
+        if (numberOfMosquito <= 0 && levelTimerFinished == true)
+        {
             winLabel.SetActive(true);
-            yield return new WaitForSeconds(waitToLoad) ;
+            GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(waitToLoad);
             FindObjectOfType<LevelLoader>().LoadNextScene();
-
+        }
     }
 
     public void HandleLoseCondition()
     {
-
-            loseLabel.SetActive(true);
+        levelTimerFinished = true;
+        loseLabel.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -61,7 +61,7 @@ public class LevelController : MonoBehaviour
         StopSpawners();
     }
 
-    private void StopSpawners() //Stop spawning
+    private void StopSpawners()
     {
         SpawnerAttacker[] spawnerArray = FindObjectsOfType<SpawnerAttacker>();
         foreach (SpawnerAttacker spawner in spawnerArray)

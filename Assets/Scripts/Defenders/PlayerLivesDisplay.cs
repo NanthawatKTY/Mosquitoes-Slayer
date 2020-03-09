@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerLivesDisplay : MonoBehaviour
 {
 
-    [SerializeField] int lives = 10;
+    [SerializeField] int lives = 5;
     [SerializeField] int damage = 1;
     Text livesText;
 

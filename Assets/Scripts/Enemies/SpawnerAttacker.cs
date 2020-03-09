@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class SpawnerAttacker : MonoBehaviour
 {
-    [SerializeField] float minSpawnDelay = 1f;
-    [SerializeField] float maxSpawnDelay = 3f;
+    [SerializeField] float minSpawnDelay ;
+    [SerializeField] float maxSpawnDelay ;
     [SerializeField] Attacker[] attackerPrefabArray;
   
 
