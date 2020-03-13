@@ -13,7 +13,7 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        if (winLabel == null || loseLabel == null) { return; }
+       if (winLabel == null || loseLabel == null) { return; }
 
         winLabel.SetActive(false);
         loseLabel.SetActive(false);
@@ -43,14 +43,15 @@ public class LevelController : MonoBehaviour
         {
             winLabel.SetActive(true);
             GetComponent<AudioSource>().Play();
-            yield return new WaitForSeconds(waitToLoad);
+            yield return new WaitForSeconds(waitToLoad); //show win label 4 secs after that will resume next frame
             FindObjectOfType<LevelLoader>().LoadNextScene();
         }
     }
 
     public void HandleLoseCondition()
     {
-        levelTimerFinished = true;
+
+    //  levelTimerFinished = true;
         loseLabel.SetActive(true);
         Time.timeScale = 0;
     }
@@ -63,7 +64,7 @@ public class LevelController : MonoBehaviour
 
     private void StopSpawners()
     {
-        SpawnerAttacker[] spawnerArray = FindObjectsOfType<SpawnerAttacker>();
+        SpawnerAttacker[] spawnerArray = FindObjectsOfType<SpawnerAttacker>(); //Keep spawners array values into spawner 
         foreach (SpawnerAttacker spawner in spawnerArray)
         {
             spawner.StopSpawning();

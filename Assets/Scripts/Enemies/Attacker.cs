@@ -7,7 +7,7 @@ public class Attacker : MonoBehaviour
 {
 
     //[Range (0f,5f)]
-    float CurrentFlySpeed = 1f;
+    public float CurrentFlySpeed = 1f;
     GameObject CurrentTarget;
 
     private void Awake()
@@ -20,15 +20,8 @@ public class Attacker : MonoBehaviour
         LevelController levelController = FindObjectOfType<LevelController>();  //Debug Null when restart
         if (levelController != null)
         {
-        
-            levelController.AttackerKilled();
+           levelController.AttackerKilled();
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     // Update is called once per frame
@@ -37,7 +30,7 @@ public class Attacker : MonoBehaviour
 
         transform.Translate(Vector2.left * CurrentFlySpeed * Time.deltaTime);
 
-        UpdateAnimationAfterKilled();                    //Update Animation After Kille Defenders
+        UpdateAnimationAfterKilled();                    //Update Animation After Killed Defenders
 
     }
 

@@ -40,8 +40,8 @@ public class SpawnerAttacker : MonoBehaviour
         newAttacker.transform.parent = transform; // who normal is , where normal is  
     }
 
-    internal object GetChild(int i)
-    {
-        throw new NotImplementedException();
-    }
+    //internal object GetChild(int i)
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

@@ -13,7 +13,7 @@ public class Defenders : MonoBehaviour
     }
 
 
-    public void AddStars(int amount)
+    public void AddStars(int amount) //For Pumping
     {
         FindObjectOfType<StarDisplay>().AddStars(amount);
     }

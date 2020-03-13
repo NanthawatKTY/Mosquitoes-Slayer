@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd958db45e9adb4488bcbbb4f41704a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTimeInSeconds: 10
+  levelTimeInSeconds: 15
 --- !u!1 &260737002
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d10582700b8194b9740ff541f0757c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 1
+  lives: 5
   damage: 1
 --- !u!1 &1456877367
 GameObject:
@@ -472,13 +472,11 @@ MonoBehaviour:
     m_MaxSize: 120
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '600
-
-'
+  m_Text: 460
 --- !u!114 &1899929072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca7a86433966ef4d9838f369b8af728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 600
+  stars: 460
 --- !u!1 &2061438321
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
         {
             return;
         }
-        SFXManagement.PlaySound("SPLAT");
+       // SFXManagement.PlaySound("SPLAT");
         GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(deathVFXObject, 1f);
     }

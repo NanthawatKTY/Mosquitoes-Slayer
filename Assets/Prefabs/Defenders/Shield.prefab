@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a059878bcf3195c499b85b7789c82165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 100
+  starCost: 150
 --- !u!61 &6571938143774721915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca273ddc806762a40ae682f54fb72809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 300
   deathVFX: {fileID: 3978560140546166103, guid: 6dcdbe0487db9a04eb8befa524162420,
     type: 3}
 --- !u!114 &2139173287

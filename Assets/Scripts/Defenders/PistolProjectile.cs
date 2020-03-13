@@ -25,7 +25,7 @@ public class PistolProjectile : MonoBehaviour
             health.DealDamage(damage);
             Destroy(gameObject);
         }
-        else if (otherCollider.gameObject.name == "DestroyOut")
+        else if (otherCollider.gameObject.name == "DestroyOut") //Destroy bullet when out of field
         {
             Destroy(gameObject);
         }
