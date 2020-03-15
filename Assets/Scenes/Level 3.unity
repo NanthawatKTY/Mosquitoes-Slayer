@@ -1969,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 98666891, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
       propertyPath: m_MaxValue
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 98666892, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
       propertyPath: levelTimeInSeconds

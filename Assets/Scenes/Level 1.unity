@@ -1831,6 +1831,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98666891, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
+      propertyPath: m_MaxValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 98666892, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
+      propertyPath: levelTimeInSeconds
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1456877368, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0

@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca273ddc806762a40ae682f54fb72809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 250
   deathVFX: {fileID: 3978560140546166103, guid: 6dcdbe0487db9a04eb8befa524162420,
     type: 3}
 --- !u!114 &3168950851268034010
@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5e83b6b9453bd4b990704c109a7673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentFlySpeed: 1
 --- !u!114 &555314101590766655
 MonoBehaviour:
   m_ObjectHideFlags: 0

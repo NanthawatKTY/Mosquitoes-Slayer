@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5e83b6b9453bd4b990704c109a7673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentFlySpeed: 1
 --- !u!61 &7938090034448134207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca273ddc806762a40ae682f54fb72809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 100
   deathVFX: {fileID: 3978560140546166103, guid: 6dcdbe0487db9a04eb8befa524162420,
     type: 3}
 --- !u!1 &7938090034859160442
