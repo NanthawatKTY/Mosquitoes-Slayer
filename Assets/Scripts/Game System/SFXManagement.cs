@@ -5,7 +5,7 @@ using UnityEngine;
 public class SFXManagement : MonoBehaviour
 {
 
-    public static AudioClip GunHitSound, FireSound, StarPumpSound, enemyDeadSound, DefenderDeathSound;
+    public static AudioClip GunHitSound, FireSound, StarPumpSound, enemyDeadSound, DefenderDeathSound, FailedLevel;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -16,6 +16,7 @@ public class SFXManagement : MonoBehaviour
         enemyDeadSound = Resources.Load<AudioClip>("SPLAT");
         DefenderDeathSound = Resources.Load<AudioClip>("BRUH");
         StarPumpSound = Resources.Load<AudioClip>("qurazy_quoin");
+        FailedLevel = Resources.Load<AudioClip>("SpinningWheel");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -44,6 +45,9 @@ public class SFXManagement : MonoBehaviour
                 break;
             case "qurazy_quoin":
                 audioSrc.PlayOneShot(StarPumpSound);
+                break;
+            case "SpinningWheel":
+                audioSrc.PlayOneShot(FailedLevel);
                 break;
         }
     }

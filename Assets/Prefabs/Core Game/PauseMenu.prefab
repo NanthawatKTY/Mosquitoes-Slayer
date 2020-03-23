@@ -275,7 +275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6562422704385394679
 RectTransform:
   m_ObjectHideFlags: 0
@@ -539,9 +539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameIsPaused: 0
-  SettingPaused: 0
   pauseMenuUI: {fileID: 6562422704385394678}
-  settingMenuUI: {fileID: 0}
+  settingMenu: {fileID: 0}
 --- !u!1 &6562422705686910038
 GameObject:
   m_ObjectHideFlags: 0

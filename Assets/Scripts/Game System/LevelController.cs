@@ -51,7 +51,8 @@ public class LevelController : MonoBehaviour
     public void HandleLoseCondition()
     {
 
-    //  levelTimerFinished = true;
+        //  levelTimerFinished = true;
+        SFXManagement.PlaySound("SpinningWheel");
         loseLabel.SetActive(true);
         Time.timeScale = 0;
     }

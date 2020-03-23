@@ -17,8 +17,8 @@ public class AKProjectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
        
-        var health = otherCollider.GetComponent<Health>();
-        var attacker = otherCollider.GetComponent<Attacker>();
+        var health = otherCollider.GetComponent<Health>(); //Get class Health.cs
+        var attacker = otherCollider.GetComponent<Attacker>(); //Get class Attacker.cs
         //Reduce Health
         if (attacker && health)
         {

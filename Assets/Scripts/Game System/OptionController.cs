@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class OptionController : MonoBehaviour
 {
 
@@ -13,6 +13,7 @@ public class OptionController : MonoBehaviour
     void Start()
     {
         volumeSlider.value = PlayerPrefsController.GetMAsterVolume();
+
     }
 
     // Update is called once per frame
