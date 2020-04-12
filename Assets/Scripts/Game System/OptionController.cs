@@ -7,7 +7,7 @@ public class OptionController : MonoBehaviour
 {
 
     [SerializeField] Slider volumeSlider;
-    [SerializeField] float defaultVolume = 0.8f;
+    [SerializeField] float defaultVolume = 1f;
 
 
     void Start()

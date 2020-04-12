@@ -20,20 +20,20 @@ public class StarDisplay : MonoBehaviour
         starText.text = stars.ToString();
     }
 
-    public bool HaveEnoughStars(int amount)
+    public bool HaveEnoughStars(int amount) //amount = defender's price
     {
         return stars >= amount;
     }
 
 
-    public void AddStars(int amount)
+    public void AddStars(int amountAdd)  //amountAdd = Stars amount add
     {
-        stars += amount;
+        stars += amountAdd;
         SFXManagement.PlaySound("qurazy_quoin");
         UpdateDisplay();
     }
 
-    public void SpendStars(int amount) //decrease
+    public void SpendStars(int amount) //decrease with defender price
     {
         if (stars >= amount)
         {

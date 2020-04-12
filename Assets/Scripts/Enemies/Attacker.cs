@@ -28,7 +28,7 @@ public class Attacker : MonoBehaviour
     void Update()
     {
 
-        transform.Translate(Vector2.left * CurrentFlySpeed * Time.deltaTime);
+        transform.Translate(Vector2.left * CurrentFlySpeed * Time.deltaTime); //Use time.deltaTime to move gameObjects 
 
         UpdateAnimationAfterKilled();                    //Update Animation After Killed Defenders
 

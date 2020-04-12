@@ -23,13 +23,13 @@ public class LevelController : MonoBehaviour
  
     public void AttackerSpawned()
     {
-        numberOfMosquito++;
+        numberOfMosquito++; //Increase mosquitoes : numberOfMosquito = numberOfMosquito + 1
     }
 
     public void AttackerKilled()
     {
-        numberOfMosquito--;
-        
+        numberOfMosquito--; //Decrease mosquitoes : numberOfMosquito = numberOfMosquito - 1
+
         if (numberOfMosquito <= 0 && levelTimerFinished) 
         {
             StartCoroutine(HandleWinCondition());
@@ -65,10 +65,10 @@ public class LevelController : MonoBehaviour
 
     private void StopSpawners()
     {
-        SpawnerAttacker[] spawnerArray = FindObjectsOfType<SpawnerAttacker>(); //Keep spawners array values into spawner 
+        SpawnerAttacker[] spawnerArray = FindObjectsOfType<SpawnerAttacker>(); //Keep spawnerArray values into spawner 
         foreach (SpawnerAttacker spawner in spawnerArray)
         {
-            spawner.StopSpawning();
+            spawner.StopSpawning();  //Go to StopSpawning in SpawnerAttacker
         }
     }
 }
