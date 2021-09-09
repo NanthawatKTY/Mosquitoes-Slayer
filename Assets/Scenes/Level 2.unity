@@ -1856,6 +1856,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1899929072, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
+      propertyPath: stars
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899929073, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
+      propertyPath: m_Text
+      value: 480
+      objectReference: {fileID: 0}
     - target: {fileID: 2061438322, guid: a0c212127b1ebf34cb9f15dfd87e6d82, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
